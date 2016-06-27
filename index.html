@@ -101,6 +101,150 @@
   <div class="post-content">
     <header>
       
+      <time datetime="2016-06-27T09:19:32.000Z"><a href="/2016/06/27/html5语义化标签/">周一, 6月 27 2016, 5:19:32 下午</a></time>
+
+  
+    <h1 class="title"><a href="/2016/06/27/html5语义化标签/">html5语义化标签</a></h1>
+  
+
+
+
+<div class="clear"></div>
+      
+    </header>
+    <div class="entry">
+      
+        <h1 id="html5新增标签"><a href="#html5新增标签" class="headerlink" title="html5新增标签"></a>html5新增标签</h1><h2 id="header"><a href="#header" class="headerlink" title="header"></a>header</h2><pre><code>&lt;header&gt;&lt;/header&gt;定义文档头部
+</code></pre><h2 id="nav"><a href="#nav" class="headerlink" title="nav"></a>nav</h2><pre><code>&lt;nav&gt;&lt;/nav&gt;定义导航
+</code></pre><h2 id="section"><a href="#section" class="headerlink" title="section"></a>section</h2><pre><code>&lt;section&gt;&lt;/section&gt;有语义的DIV作用于相关内容聚合
+</code></pre><h2 id="article"><a href="#article" class="headerlink" title="article"></a>article</h2><pre><code>&lt;article&gt;&lt;/article&gt;更有语义的DIV作用于多个相关内容的聚合
+</code></pre><h2 id="aside"><a href="#aside" class="headerlink" title="aside"></a>aside</h2><pre><code>&lt;aside&gt;&lt;/aside&gt;侧边框，独立于主体内容部分
+</code></pre><h2 id="footer"><a href="#footer" class="headerlink" title="footer"></a>footer</h2><pre><code>&lt;footer&gt;&lt;/footer&gt;定义文档尾部
+</code></pre><h2 id="details"><a href="#details" class="headerlink" title="details"></a>details</h2><pre><code>&lt;details&gt;
+    &lt;summary&gt;&lt;/summary&gt;
+&lt;/details&gt;
+该标签用于目录，要和summary配合使用
+</code></pre><h2 id="hgroup"><a href="#hgroup" class="headerlink" title="hgroup"></a>hgroup</h2><pre><code>&lt;hgroup&gt;
+    &lt;h1&gt;&lt;/h1&gt;
+    &lt;h2&gt;&lt;/h2&gt;
+&lt;/hgroup&gt;
+</code></pre><h2 id="新增input属性"><a href="#新增input属性" class="headerlink" title="新增input属性"></a>新增input属性</h2><pre><code>&lt;input type=&quot;tel&quot; &gt;        定义用于电话号码的文本字段                 
+&lt;input type=&quot;search&quot; &gt;  定义用于搜索的文本字段              &lt;input type=&quot;url&quot; &gt;        定义用于 URL 的文本字段
+&lt;input type=&quot;email&quot; &gt;     定义用于 e-mail 地址的文本字段
+&lt;input type=&quot;datetime&quot; &gt; 定义日期字段
+&lt;input type=&quot;date&quot; &gt;    定义日期字段
+&lt;input type=&quot;month&quot; &gt;    定义日期字段的月
+&lt;input type=&quot;week&quot; &gt;    定义日期字段的周    
+&lt;input type=&quot;time&quot; &gt;    定义日期字段的时、分、秒
+&lt;input type=&quot;datetime-local&quot; &gt; 定义本地日期字段
+&lt;input type=&quot;number&quot; &gt;    带有下拉样式的数字字段
+&lt;input type=&quot;range&quot; &gt;    带有滑块样式的数字字段
+&lt;input type=&quot;color&quot; &gt;    定义拾色器
+</code></pre><h2 id="引入音频"><a href="#引入音频" class="headerlink" title="引入音频"></a>引入音频</h2><pre><code>&lt;audio src=&quot;http://up.haoduoge.com/mp3/2016-06-26/1466949647.mp3&quot; controls &lt;!-- 控制器 --&gt;  autoplay&lt;!-- 自动播放 --&gt; loop&lt;!-- 循环 --&gt; preload&lt;!-- 提前缓存 --&gt;&gt;
+&lt;/audio&gt;
+&lt;audio src=&quot;&quot;&gt;
+    &lt;source src=&quot;&quot;&gt;    
+    &lt;source src=&quot;&quot;&gt;    
+    &lt;source src=&quot;&quot;&gt;    
+&lt;/audio&gt;
+</code></pre><h2 id="引入视频"><a href="#引入视频" class="headerlink" title="引入视频"></a>引入视频</h2><pre><code>&lt;video src=&quot;ifyou.mp4&quot; controls width=&quot;500px&quot;&gt;
+&lt;source src=&quot;&quot; type=&quot;&quot;&gt;
+&lt;source src=&quot;&quot; type=&quot;&quot;&gt;
+&lt;/video&gt;
+</code></pre><h2 id="mark"><a href="#mark" class="headerlink" title="mark"></a>mark</h2><pre><code>&lt;p&gt;온 세상이 &lt;mark&gt;함께&lt;/mark&gt; 미쳐&lt;/p&gt;    ，增亮效果如下图
+</code></pre><p><img src="images/mark.png" alt="图片">    </p>
+<h2 id="meter"><a href="#meter" class="headerlink" title="meter"></a>meter</h2><pre><code>&lt;meter max=&quot;规定范围的最大值&quot; min=&quot;规定范围的最小值&quot; value=&quot;必需。规定度量的当前值&quot; &gt;&lt;/meter&gt;，使用 meter 元素来度量给定范围内的数据，用于投票类相关    
+</code></pre><h2 id="process"><a href="#process" class="headerlink" title="process"></a>process</h2><pre><code>&lt;progress value=&quot;定义当前值&quot; max=&quot;定义完成值&quot; min=&quot;定义初始值&quot;&gt;&lt;/progress&gt;， 使用process标签定义运行中的进度（进程）    
+</code></pre><h2 id="time"><a href="#time" class="headerlink" title="time"></a>time</h2><pre><code>&lt;time datetime=&quot;2016-02-14&quot;&gt;情人节&lt;/time&gt;,time标签定义元素的日期和时间。
+</code></pre><h2 id="wbr"><a href="#wbr" class="headerlink" title="wbr"></a>wbr</h2><pre><code>如果单词太长，或者您担心浏览器会在错误的位置换行，那么您可以使用 &lt;wbr&gt; 元素来添加 Word Break Opportunity（单词换行时机）。
+</code></pre><h2 id="引入标签"><a href="#引入标签" class="headerlink" title="引入标签"></a>引入标签</h2><pre><code>1. &lt;cite&gt;빠지도록정신빠지도록정신&lt;/cite&gt;    引用的文本将以斜体显示
+2. &lt;blockquote&gt;빠지도록정신빠지도록정신&lt;/blockquote&gt;    标签定义块引用,通常会首行缩进。
+3. &lt;q&gt;빠지도록정신빠지도록정신&lt;/q&gt;    &lt;q&gt; 标签定义短的引用。浏览器经常在引用的内容周围添加引号。    效果如下：        
+</code></pre><p><img src="images/q.png" alt="图片"></p>
+<h2 id="dialog"><a href="#dialog" class="headerlink" title="dialog"></a>dialog</h2><pre><code>&lt;dialog open&gt;미쳐 정신 빠지도록정신 빠지도록정신&lt;/dialog&gt;    标签定义对话框或窗口。
+</code></pre><p><img src="images/dialog.png" alt="图片"></p>
+<h2 id="figure"><a href="#figure" class="headerlink" title="figure"></a>figure</h2><pre><code>&lt;figure&gt;
+&lt;figcaption&gt;图表标题多来爱梦&lt;/figcaption&gt;
+&lt;img src=&quot;http://img0.imgtn.bdimg.com/it/        u=1657848368,3028327928&amp;fm=21&amp;gp=0.jpg&quot;&gt;    
+&lt;/figure&gt;
+&lt;figure&gt; 标签规定独立的流内容（图像、图表、照片、代码等等）。
+&lt;figure&gt; 元素的内容应该与主内容相关，同时元素的位置相对于主内容是独立的。如果被删除，则不应对文档流产生影响。
+&lt;figcaption&gt; 元素被用来为 &lt;figure&gt; 元素定义标题。
+</code></pre><p><img src="images/figure.png" alt="图片">    </p>
+<h2 id="datalist"><a href="#datalist" class="headerlink" title="datalist"></a>datalist</h2><pre><code>&lt;form&gt;
+&lt;input type=&quot;text&quot; list=&quot;haha&quot;&gt;                    
+&lt;datalist id=&quot;haha&quot;&gt;
+    &lt;option value=&quot;我不告诉你&quot;&gt;&lt;/option&gt;
+    &lt;option value=&quot;就不告诉你&quot;&gt;&lt;/option&gt;
+    &lt;option value=&quot;来打我啊&quot;&gt;&lt;/option&gt;
+    &lt;option value=&quot;你打不到&quot;&gt;&lt;/option&gt;
+    &lt;option value=&quot;哈哈哈哈&quot;&gt;&lt;/option&gt;
+&lt;/datalist&gt;    
+&lt;/form&gt;    
+&lt;datalist&gt; 标签定义选项列表。请与 input 元素配合使用该元素，来定义 input 可能的值。
+datalist 及其选项不会被显示出来，它仅仅是合法的输入值列表。
+请使用 input 元素的 list 属性来绑定 datalist。    
+</code></pre><p><img src="images/datalist.png" alt="图片"></p>
+<h2 id="label-amp-fieldset"><a href="#label-amp-fieldset" class="headerlink" title="label&amp;fieldset"></a>label&amp;fieldset</h2><pre><code>&lt;form&gt;
+    &lt;fieldset&gt;
+    &lt;legend&gt;账号登陆&lt;/legend&gt;
+    &lt;label for=&quot;username&quot;&gt;账号&lt;/label&gt;
+    &lt;input type=&quot;text&quot; name=&quot;&quot; id=&quot;username&quot;&gt;&lt;br&gt;
+    &lt;label for=&quot;pass&quot;&gt;密码&lt;/label&gt;
+    &lt;input type=&quot;password&quot; id=&quot;pass&quot;&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;    
+1.label 元素不会向用户呈现任何特殊效果。不过，它为鼠标用户改进了可用性。如果您在 label 元素内点击文本，就会触发此控件。就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。
+&lt;label&gt; 标签的 for 属性应当与相关元素的 id 属性相同。
+2.fieldset 元素可将表单内的相关元素分组。
+&lt;fieldset&gt; 标签将表单内容的一部分打包，生成一组相关表单的字段。
+当一组表单元素放到 &lt;fieldset&gt; 标签内时，浏览器会以特殊方式来显示它们，它们可能有特殊的边界、3D 效果，或者甚至可创建一个子表单来处理这些元素。
+&lt;fieldset&gt; 标签没有必需的或唯一的属性。
+&lt;legend&gt; 标签为 fieldset 元素定义标题。
+</code></pre><p><img src="images/label.png" alt="图片">    </p>
+
+      
+    </div>
+    <footer>
+      
+        <div class="alignleft">
+            <a href="/2016/06/27/html5语义化标签/#more" class="more-link"><i class="fa fa-chevron-right"></i>Read More</a>
+        </div>
+        
+        
+          <div class="alignright"> 
+            <a href="http://yoursite.com/2016/06/27/html5语义化标签/#comment" class="comment-link">
+              <i class="fa fa-comments"></i><span class="ds-thread-count" data-thread-key="/2016/06/27/html5语义化标签/">&nbsp;
+              </span>
+            </a>
+          </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
       <time datetime="2016-06-24T08:16:22.000Z"><a href="/2016/06/24/meta/">周五, 6月 24 2016, 4:16:22 下午</a></time>
 
   
