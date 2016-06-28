@@ -101,6 +101,106 @@
   <div class="post-content">
     <header>
       
+      <time datetime="2016-06-28T12:23:31.000Z"><a href="/2016/06/28/ccs3选择器/">周二, 6月 28 2016, 8:23:31 晚上</a></time>
+
+  
+    <h1 class="title"><a href="/2016/06/28/ccs3选择器/">ccs3选择器</a></h1>
+  
+
+
+
+<div class="clear"></div>
+      
+    </header>
+    <div class="entry">
+      
+        <h3 id="子元素选择器-and-后带选择器的区别？"><a href="#子元素选择器-and-后带选择器的区别？" class="headerlink" title="子元素选择器 and 后带选择器的区别？"></a>子元素选择器 and 后带选择器的区别？</h3><pre><code>子元素选择器只是选中子元素，子元素之后的不会被选。 E &gt; F
+后代选择器是选中所有的后代。 E F
+</code></pre><h3 id="相邻兄弟选择器-and-通用兄弟选择器的区别"><a href="#相邻兄弟选择器-and-通用兄弟选择器的区别" class="headerlink" title="相邻兄弟选择器 and 通用兄弟选择器的区别"></a>相邻兄弟选择器 and 通用兄弟选择器的区别</h3><pre><code>相邻兄弟选择器只能选择下方的一个;       E + F
+通用兄弟选择器可以选择下方多个;         E ~ F
+都要遵循同一父级。
+</code></pre><h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><pre><code>E[value]
+E[value=&quot;axiba&quot;]
+E[value~=&quot;axiba&quot;]~:表示几个以空格隔开的属性值中包含了“haha”
+E[value^=&quot;axiba&quot;]^:以haha开头的值
+E[value$=&quot;axiba&quot;]$:以haha结尾的值
+E[value*=&quot;axiba&quot;]*:包含了haha的值
+E[value|=&quot;axiba&quot;]|:以haha或haha-开头的值
+E[value=&quot;axiba&quot;]和E[value*=&quot;axiba&quot;] 常用
+</code></pre><p><img src="images/选择器.jpg" alt="haha"></p>
+<h3 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h3><pre><code>：disabled  表单元素，默认废弃
+：enabled    表单元素，与disabled相反
+：checked  点击后的状态
+：focus  表单元素聚焦
+</code></pre><p><code>excuse：input[type=&quot;text&quot;]:disabled{
+border:1px red solid;background:blue;}</code></p>
+<h3 id="nth-选择器"><a href="#nth-选择器" class="headerlink" title="nth 选择器"></a>nth 选择器</h3><pre><code>:first-child 选择某个元素的第一个子元素
+:last-child 选择某个元素的最后一个子元素
+：nth-last-child()选择某个元素的一个或多个特定的子元素。从这个元素的最后一个子元素开始算。
+:nth-of-type（）选择指定的元素
+:nth-last-of-type()选择指定的元素，从元素的最后一个开始计算。
+:first-of-type选择一个上级元素下的第一个同类子元素。
+:last-of-type 选择一个上级元素的最后一个同类子元素。
+:only-child 选择的元素是它的父元素的唯一一个子元素。
+:only-of-type 选择一个元素是它的上级元素的唯一一个相同类型的子元素。
+:empty选择的元素里面没有任何内容
+----------------------------------------------------
+:nth-child()选择某个元素的一个或多个特定的子元素；
+:nth-child(length); 参数为具体数字‘
+:nth-child(n); 参数是n，n≥1；
+:nth-child(2n);n的倍数选择，n≥1；
+:nth-child(n+length); 选择大于length后面的元素；
+:nth-child(-n+length);选择小于length前面的元素；
+:nth-child(2n+1);表示隔几选一，odd even；
+</code></pre><h3 id="否定选择器（：not）"><a href="#否定选择器（：not）" class="headerlink" title="否定选择器（：not）"></a>否定选择器（：not）</h3><pre><code>input:not([type=&quot;submit&quot;]){border:1px red soild;
+</code></pre><h3 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h3><pre><code>::first-letter 选择首字母/字
+::first-line 选择第一行
+::before, ::after 给元素前面或后面插入内容，配合“content”
+使用，常用有清除浮动和icon。
+::selection 改变网页文本效果，只有背景和字体属性。
+</code></pre>
+      
+    </div>
+    <footer>
+      
+        <div class="alignleft">
+            <a href="/2016/06/28/ccs3选择器/#more" class="more-link"><i class="fa fa-chevron-right"></i>Read More</a>
+        </div>
+        
+        
+          <div class="alignright"> 
+            <a href="http://yoursite.com/2016/06/28/ccs3选择器/#comment" class="comment-link">
+              <i class="fa fa-comments"></i><span class="ds-thread-count" data-thread-key="/2016/06/28/ccs3选择器/">&nbsp;
+              </span>
+            </a>
+          </div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article class="post">
+  
+    <div class="gallery">
+  <div class="photoset">
+    
+      <img src="">
+    
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
+  </div>
+</div>
+  
+  <div class="post-content">
+    <header>
+      
       <time datetime="2016-06-27T09:19:32.000Z"><a href="/2016/06/27/html5语义化标签/">周一, 6月 27 2016, 5:19:32 下午</a></time>
 
   
