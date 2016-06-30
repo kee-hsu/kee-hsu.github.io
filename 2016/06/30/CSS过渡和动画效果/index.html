@@ -3,18 +3,15 @@
 <head>
   <meta charset="utf-8">
   
-  <title>ccs3选择器 | 春田吥吥</title>
+  <title>CSS过渡和动画效果 | 春田吥吥</title>
   <meta name="author" content="Kee Hsu">
   
-  <meta name="description" content="子元素选择器 and 后带选择器的区别？子元素选择器只是选中子元素，子元素之后的不会被选。 E &amp;gt; F
-后代选择器是选中所有的后代。 E F
-相邻兄弟选择器 and 通用兄弟选择器的区别相邻兄弟选择器只能选择下方的一个;       E + F
-通用兄弟选择器可以选择下方多个;        ">
+  <meta name="description" content="transition">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="ccs3选择器"/>
+  <meta property="og:title" content="CSS过渡和动画效果"/>
   <meta property="og:site_name" content="春田吥吥"/>
 
   
@@ -74,10 +71,10 @@
   <div class="post-content">
     <header>
       
-      <time datetime="2016-06-28T12:23:31.000Z"><a href="/2016/06/28/ccs3选择器/">周二, 6月 28 2016, 8:23:31 晚上</a></time>
+      <time datetime="2016-06-30T11:14:47.000Z"><a href="/2016/06/30/CSS过渡和动画效果/">周四, 6月 30 2016, 7:14:47 晚上</a></time>
 
   
-    <h1 class="title">ccs3选择器</h1>
+    <h1 class="title">CSS过渡和动画效果</h1>
   
 
 
@@ -87,51 +84,7 @@
     </header>
     <div class="entry">
       
-        <h3 id="子元素选择器-and-后带选择器的区别？"><a href="#子元素选择器-and-后带选择器的区别？" class="headerlink" title="子元素选择器 and 后带选择器的区别？"></a>子元素选择器 and 后带选择器的区别？</h3><pre><code>子元素选择器只是选中子元素，子元素之后的不会被选。 E &gt; F
-后代选择器是选中所有的后代。 E F
-</code></pre><h3 id="相邻兄弟选择器-and-通用兄弟选择器的区别"><a href="#相邻兄弟选择器-and-通用兄弟选择器的区别" class="headerlink" title="相邻兄弟选择器 and 通用兄弟选择器的区别"></a>相邻兄弟选择器 and 通用兄弟选择器的区别</h3><pre><code>相邻兄弟选择器只能选择下方的一个;       E + F
-通用兄弟选择器可以选择下方多个;         E ~ F
-都要遵循同一父级。
-</code></pre><h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><pre><code>E[value]
-E[value=&quot;axiba&quot;]
-E[value~=&quot;axiba&quot;]~:表示几个以空格隔开的属性值中包含了“haha”
-E[value^=&quot;axiba&quot;]^:以haha开头的值
-E[value$=&quot;axiba&quot;]$:以haha结尾的值
-E[value*=&quot;axiba&quot;]*:包含了haha的值
-E[value|=&quot;axiba&quot;]|:以haha或haha-开头的值
-E[value=&quot;axiba&quot;]和E[value*=&quot;axiba&quot;] 常用
-</code></pre><h3 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器"></a>伪类选择器</h3><pre><code>：disabled  表单元素，默认废弃
-：enabled    表单元素，与disabled相反
-：checked  点击后的状态
-：focus  表单元素聚焦
-</code></pre><p><code>excuse：input[type=&quot;text&quot;]:disabled{
-border:1px red solid;background:blue;}</code></p>
-<h3 id="nth-选择器"><a href="#nth-选择器" class="headerlink" title="nth 选择器"></a>nth 选择器</h3><pre><code>:first-child 选择某个元素的第一个子元素
-:last-child 选择某个元素的最后一个子元素
-：nth-last-child()选择某个元素的一个或多个特定的子元素。从这个元素的最后一个子元素开始算。
-:nth-of-type（）选择指定的元素
-:nth-last-of-type()选择指定的元素，从元素的最后一个开始计算。
-:first-of-type选择一个上级元素下的第一个同类子元素。
-:last-of-type 选择一个上级元素的最后一个同类子元素。
-:only-child 选择的元素是它的父元素的唯一一个子元素。
-:only-of-type 选择一个元素是它的上级元素的唯一一个相同类型的子元素。
-:empty选择的元素里面没有任何内容
-----------------------------------------------------
-:nth-child()选择某个元素的一个或多个特定的子元素；
-:nth-child(length); 参数为具体数字‘
-:nth-child(n); 参数是n，n≥1；
-:nth-child(2n);n的倍数选择，n≥1；
-:nth-child(n+length); 选择大于length后面的元素；
-:nth-child(-n+length);选择小于length前面的元素；
-:nth-child(2n+1);表示隔几选一，odd even；
-</code></pre><h3 id="否定选择器（：not）"><a href="#否定选择器（：not）" class="headerlink" title="否定选择器（：not）"></a>否定选择器（：not）</h3><pre><code>input:not([type=&quot;submit&quot;]){border:1px red soild;
-</code></pre><h3 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h3><pre><code>::first-letter 选择首字母/字
-::first-line 选择第一行
-::before, ::after 给元素前面或后面插入内容，配合“content”
-使用，常用有清除浮动和icon。
-::selection 改变网页文本效果，只有背景和字体属性。
-</code></pre><p><img src="http://img0.imgtn.bdimg.com/it/u=3950483065,137018351&amp;fm=21&amp;gp=0.jpg" alt="">    </p>
-
+        <h2 id="transition"><a href="#transition" class="headerlink" title="transition"></a>transition</h2>
       
     </div>
     <footer>
@@ -155,10 +108,8 @@ border:1px red solid;background:blue;}</code></p>
           <div class="clearfix"></div>
           <nav id="pagination">
   
-    <a href="/2016/06/30/CSS过渡和动画效果/" class="alignleft prev"><i class="fa fa-long-arrow-left"></i>Next</a>
   
-  
-    <a href="/2016/06/27/html5语义化标签/" class="alignright next">Prev<i class="fa fa-long-arrow-right"></i></a>
+    <a href="/2016/06/28/ccs3选择器/" class="alignright next">Prev<i class="fa fa-long-arrow-right"></i></a>
   
   <div class="clearfix"></div>
 </nav>
@@ -174,7 +125,7 @@ border:1px red solid;background:blue;}</code></p>
 
   
       <!-- Duoshuo Comment BEGIN -->
-<div class="ds-thread" data-thread-key="/2016/06/28/ccs3选择器/"></div>
+<div class="ds-thread" data-thread-key="/2016/06/30/CSS过渡和动画效果/"></div>
 <!-- Duoshuo Comment END -->
   
 </section>
